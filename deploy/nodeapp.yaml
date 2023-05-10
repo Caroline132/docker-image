@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-node-app
+spec:
+  containers:
+  - name: my-node-app
+    image: caroline132/my-node-app
+    ports:
+    - containerPort: 3000
