@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: nodeapp-ingress
+  namespace: default
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
@@ -14,4 +15,4 @@ spec:
           service:
             name: nodeapp-service 
             port:
-                number: 3000
+              number: 3000
