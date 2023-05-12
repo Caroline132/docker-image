@@ -12,7 +12,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: my-node-app
+            name: nodeapp-service 
             port:
                 number: 3000
-
