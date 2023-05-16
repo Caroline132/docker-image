@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install cert-manager CustomResourceDEfinition resources
+# Install cert-manager CustomResourceDefinition resources
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.2/cert-manager.crds.yaml
 
 # Add Jetstack Helm repository
