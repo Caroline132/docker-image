@@ -3,9 +3,3 @@ kind: Kustomization
 
 resources:
   - https://github.com/cert-manager/cert-manager/releases/download/v1.11.2/cert-manager.yaml
-
-patches:
-  - path: patches/patch.yaml
-    target:
-      kind: Deployment
-      #      name: cert-manager <- target specific Deployment
