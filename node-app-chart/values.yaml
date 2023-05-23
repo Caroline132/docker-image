@@ -8,7 +8,7 @@ image:
   repository: caroline132/my-node-app
   tag: latest
 
-hostURL: dev.com
+hostURL: dev.example.com
 
 imagePullSecrets: []
 nameOverride: ""

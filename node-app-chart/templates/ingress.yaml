@@ -7,13 +7,14 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - http:
+  - host: {{ .Values.hostURL }}
+    http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: {{ include "node-app-chart.fullname" . }}-service
+            name: {{ include "node-app-chart.fullname" . }}
             port:
               number: {{ .Values.service.port }}
 
