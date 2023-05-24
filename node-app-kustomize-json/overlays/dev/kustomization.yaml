@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base/
+
+patches:
+  - path: deployment-patch.json
+    target:
+      name: my-node-app-deployment
+  - path: ingress-patch.json
+    target:
+      name: nodeapp-ingress
