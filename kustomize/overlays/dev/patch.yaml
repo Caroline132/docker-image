@@ -4,4 +4,4 @@ metadata:
   name: cert-manager
   namespace: cert-manager
 spec:
-  replicas: 4
+  replicas: 5
